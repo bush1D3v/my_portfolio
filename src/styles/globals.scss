@@ -1,0 +1,32 @@
+@import "./variables.scss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: $blue-base;
+  color: $white;
+}
+
+img {
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: $secondary;
+}
+
+::selection {
+  background: $secondary;
+  color: $primary;
+}
