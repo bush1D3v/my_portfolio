@@ -1,0 +1,31 @@
+$blue-base: #3178c6;
+$dark-blue:#1d4971;
+$light-blue: #4c8dcf;
+$saturated-blue: #0066b2;
+$desaturated-blue: #5394d4;
+$primary: #112069;
+$secondary: #2ec6e5;
+$accent: #6b41d2;
+$black: #000;
+$white: #eee;
+$error: #e70008;
+$input: #f7e9fbb3;
+$dark-gray: #666666;
+$light-gray: #cccccc;
+
+:root {
+  --blue-base: #{$blue-base};
+  --dark-blue: #{$dark-blue};
+  --light-blue: #{$light-blue};
+  --saturated-blue: #{$saturated-blue};
+  --desaturated-blue: #{$desaturated-blue};
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --accent: #{$accent};
+  --black: #{$black};
+  --white: #{$white};
+  --error: #{$error};
+  --input: #{$input};
+  --dark-gray: #{$dark-gray};
+  --light-gray: #{$light-gray};
+}
