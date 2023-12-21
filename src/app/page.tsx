@@ -18,35 +18,35 @@ import {
 
 export default function Home() {
   return (
-    <div
+    <main
       className="flex flex-col items-center justify-center pb-14 gap-10 m-auto max-w-screen-lg min-h-[90dvh] relative"
     >
       <Profile />
       <ul className="flex gap-4 flex-col">
         <li>
           <LinkButton
-            href="https://api.whatsapp.com/send/?phone=5521995727079"
+            href="https://www.linkedin.com/in/vj021/"
             text="Linkedin"
             icon={<FaLinkedin />}
           />
         </li>
         <li>
           <LinkButton
-            href="https://api.whatsapp.com/send/?phone=5521995727079"
+            href="https://github.com/bush1D3v"
             text="GitHub"
             icon={<FaGithub />}
           />
         </li>
         <li>
           <LinkButton
-            href="https://api.whatsapp.com/send/?phone=5521995727079"
+            href="https://discord.com/users/443480311066656770"
             text="Discord"
             icon={<FaDiscord />}
           />
         </li>
         <li>
           <LinkButton
-            href="https://api.whatsapp.com/send/?phone=5521995727079"
+            href="https://www.twitch.tv/dev_navarro"
             text="Twitch"
             icon={<FaTwitch />}
           />
@@ -94,6 +94,6 @@ export default function Home() {
           />
         </li>
       </ul>
-    </div>
+    </main>
   );
 }
