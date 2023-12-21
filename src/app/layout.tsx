@@ -7,8 +7,8 @@ import { Footer, Header } from "../components";
 const inter = Inter({ subsets: [ "latin" ] });
 
 export const metadata: Metadata = {
-  title: "Caroline Mariano",
-  description: "Linktree de Caroline Mariano, criado por Victor Navarro (bush1D3v)",
+  title: "Victor Navarro",
+  description: "Linktree Victor Navarro (bush1D3v)",
 };
 
 export default function RootLayout({
@@ -23,7 +23,6 @@ export default function RootLayout({
         {children}
         <Footer></Footer>
       </body>
-      <script async src="//www.instagram.com/embed.js"></script>
     </html>
   );
 }
