@@ -4,7 +4,6 @@
 @import "tailwindcss/utilities";
 
 * {
-  font-family: Inter, sans-serif;
   box-sizing: border-box;
 }
 
@@ -23,10 +22,5 @@ img {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: $secondary;
-}
-
-::selection {
-  background: $secondary;
-  color: $primary;
+  background-color: $dark-blue;
 }
