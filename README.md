@@ -18,10 +18,6 @@ O **Linktree** é uma aplicação de **árvore de links**, onde tem o objetivo d
    <img align='center' height='68' width='72' title='Potcss' alt='potcss' src='https://github.com/bush1D3v/my_portfolio/assets/133554156/85b7c73b-e181-4c95-b9de-a8e0ba0523d3' />
 </div>
 
-## 🏗 Estrutura e Arquitetura
-
-O projeto segue os princípios da **arquitetura limpa** e leva em consideração os princípios do **SOLID**. O código foi organizado de acordo com os princípios de **modularidade**, **reutilização** e **responsabilidade única**.
-
 # 🖋️ Contribuindo para o Linktree 
 
 Agradecemos pelo seu interesse em contribuir para o **Linktree**. Sua ajuda é **valiosa** para melhorar e **expandir** nossa aplicação. Abaixo estão as **diretrizes** e os **passos** para contribuir com nosso projeto.
