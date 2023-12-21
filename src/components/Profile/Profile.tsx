@@ -1,7 +1,6 @@
 import { type ReactElement } from "react";
 import Image from "next/image";
 
-import profilePhoto from "../../assets/images/profile.png";
 
 export default function Profile(): ReactElement {
   return (
@@ -9,12 +8,14 @@ export default function Profile(): ReactElement {
       <figure className="flex flex-col justify-center items-center">
         <Image
           className="w-[13dvh] rounded-full"
-          src={profilePhoto}
+          src="https://avatars.githubusercontent.com/u/133554156?v=4"
+          width={200}
+          height={200}
           alt="Foto de perfil"
         />
-        <figcaption className="text-xl font-bold">@Caroline.carvalho_psi</figcaption>
+        <figcaption className="text-xl font-bold">@bush1D3v</figcaption>
       </figure>
-      <q className="font-bold">frase</q>
+      <q className="font-bold">A minha magia é não desistir, jamais!</q>
     </div>
   );
 }
