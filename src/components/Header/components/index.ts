@@ -1,5 +1,7 @@
 import ListItem from "./ListItem";
+import Logo from "./Logo";
 
 export {
-  ListItem
+  ListItem,
+  Logo
 };
