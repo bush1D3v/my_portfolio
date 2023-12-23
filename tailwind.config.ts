@@ -2,24 +2,29 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        blueBase: "var(--blue-base)",
-        darkBlue: "var(--dark-blue)",
-        lightBlue: "var(--light-blue)",
-        saturatedBlue: "var(--saturated-blue)",
-        accent: "var(--accent)",
-        black: "var(--black)",
-        white: "var(--white)",
-        darkGray: "var(--dark-gray)",
-        lightGray: "var(--light-gray)",
+        RomanSilver: "var(--roman-silver)",
+        White: "var(--white)",
+        WhiteA5: "var(--white-a5)",
+        WhiteA10: "var(--white-a10)",
+        LightGray: "var(--light-gray)",
+        Gray: "var(--gray)",
+        Gray2: "var(--gray2)",
+        DarkGray: "var(--dark-gray)",
+        Black: "var(--black)",
+        Black2: "var(--black2)",
+        Red: "var(--red)",
+        RedA20: "var(--red-a20)",
+        Yellow: "var(--yellow)",
+        Background: "var(--background)",
       },
     },
   },
-  plugins: [],
+  plugins: [ require("tailwindcss-animated") ],
 };
 
 export default config;
