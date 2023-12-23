@@ -1,24 +1,28 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
+import { Lato } from "next/font/google";
 import "../styles/globals.scss";
+import { type ReactElement } from "react";
+
 import { Footer, Header } from "../components";
 
-const inter = Inter({ subsets: [ "latin" ] });
+const lato = Lato({
+  subsets: [ "latin" ],
+  weight: [ "700", "900" ],
+});
 
 export const metadata: Metadata = {
-  title: "Victor Navarro",
-  description: "Linktree Victor Navarro (bush1D3v)",
+  title: "Victor Navarro - Software Developer",
+  description: "Portfólio profissional de Victor Navarro (bush1D3v), Software Developer",
 };
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) {
+}): ReactElement {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>
+      <body className={lato.className}>
         <Header></Header>
         {children}
         <Footer></Footer>
