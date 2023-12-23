@@ -21,7 +21,7 @@ export default function Header(): ReactElement {
           <ListItem href="/about" text="Sobre" />
           <ListItem href="/skills" text="Habilidades" />
           <ListItem href="/projects" text="Projetos" />
-          <ListItem href="/certifications" text="Certificações" />
+          <ListItem href="/formations" text="Formações" />
           <ListItem href="/contact" text="Contato" />
         </ul>
       </nav>
