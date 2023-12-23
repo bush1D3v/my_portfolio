@@ -1,5 +1,7 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "no-unused-vars": "error",
@@ -12,6 +14,8 @@
         "peerDependencies": false
       }
     ],
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/no-explicit-any": "error",
     "max-len": ["error", { "code": 120 }],
     "import/order": [
       "error",
