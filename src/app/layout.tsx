@@ -3,7 +3,11 @@ import { Lato } from "next/font/google";
 import "../styles/globals.scss";
 import { type ReactElement } from "react";
 
-import { Footer, Header } from "../components";
+import {
+  Footer,
+  Header,
+  ThemeProvider
+} from "../components";
 
 const lato = Lato({
   subsets: [ "latin" ],
@@ -23,9 +27,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={lato.className}>
-        <Header></Header>
-        {children}
-        <Footer></Footer>
+        <ThemeProvider>
+          <Header></Header>
+          {children}
+          <Footer></Footer>
+        </ThemeProvider>
       </body>
     </html>
   );
