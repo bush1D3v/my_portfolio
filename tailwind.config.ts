@@ -1,6 +1,8 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: [ "class", "[data-theme=\"dark\"]" ],
+  lightMode: [ "class", "[data-theme=\"light\"]" ],
   content: [
     "./src/**/*.{ts,tsx}",
   ],
