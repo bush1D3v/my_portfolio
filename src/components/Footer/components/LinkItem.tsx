@@ -11,14 +11,15 @@ export default function LinkItem(
 ): ReactElement {
   return (
     <li
-      className="w-16 h-16 p-4 border-2 border-WhiteA10 hover:border-White rounded-full ease-in-out duration-300
-      cursor-pointer"
+      className="flex items-center w-16 h-16 border-2 border-WhiteA10 hover:border-White rounded-full
+      ease-in-out duration-300 cursor-pointer "
     >
       <Link
-        className="w-full h-full flex items-center justify-center"
+        className="w-16 h-16 flex items-center justify-center"
         href={href}
+        target="_blank"
       >
-        {React.cloneElement(icon, { className: "text-3xl text-White" })}
+        {React.cloneElement(icon, { className: "text-3xl text-White duration-200 ease-in" })}
       </Link>
     </li>
   );
