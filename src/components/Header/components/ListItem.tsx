@@ -12,7 +12,7 @@ export default function ListItem(
   return (
     <li>
       <Link
-        className="hover:opacity-50 ease-in-out duration-150 uppercase"
+        className="hover:opacity-50 ease-in duration-200 uppercase"
         href={href}
       >
         {text}
