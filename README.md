@@ -9,7 +9,7 @@
 ![Pull request](https://img.shields.io/static/v1?label=PR&message=welcome&color=green)
 
 ## 🔍 Sobre o Projeto
-O **Linktree** é uma aplicação de **árvore de links**, onde tem o objetivo de **reunir links** em um único site.
+O meu **Portfólio** é uma aplicação de **histórico profissional**, onde tem o objetivo de reunir **formações**, **projetos** e **informações profissionais** e **sobre o desenvolvedor** num geral.
 
 ## 🛠️ Tecnologias e Ferramentas Utilizadas
 <div align='center'>
