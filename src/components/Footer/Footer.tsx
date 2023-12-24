@@ -13,7 +13,8 @@ import { LinkItem } from "./components";
 export default function Footer(): ReactElement {
   return (
     <footer
-      className="lg:mb-[3dvh] p-5 flex items-center justify-center max-w-screen-xl h-[9dvh] m-auto bg-Black2 rounded-xl"
+      className="lg:mb-[3dvh] p-5 flex items-center justify-center max-w-screen-xl
+      h-[9dvh] m-auto bg-Black2 rounded-xl duration-200 ease-in"
     >
       <address>
         <ul className="flex gap-5">
