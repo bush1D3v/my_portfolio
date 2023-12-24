@@ -13,7 +13,7 @@ export default function Logo(): ReactElement {
         <Image
           src={logo}
           alt="Logo"
-          className="dark:brightness-100 brightness-0 w-20 cursor-pointer"
+          className="dark:brightness-100 brightness-0 w-20 cursor-pointer duration-200 ease-in"
         />
       </Link>
     </div>
