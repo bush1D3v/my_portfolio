@@ -1,11 +1,12 @@
 import { type ReactElement } from "react";
 
-import { ListItem, Logo } from "./components";
+import { ButtonTheme, ListItem, Logo } from "./components";
 
 export default function Header(): ReactElement {
   return (
     <header
-      className="lg:mt-[3dvh] p-5 flex items-center justify-around max-w-screen-xl h-[9dvh] m-auto bg-Black2 rounded-xl"
+      className="lg:mt-[3dvh] p-5 flex items-center justify-around max-w-screen-xl ]
+      h-[9dvh] m-auto bg-Black2 rounded-xl duration-200 ease-in"
     >
       <Logo />
       <nav className="flex">
@@ -17,9 +18,7 @@ export default function Header(): ReactElement {
           <ListItem href="/contact" text="Contato" />
         </ul>
       </nav>
-      <button>
-        ButtonTheme
-      </button>
+      <ButtonTheme />
     </header>
   );
 }
