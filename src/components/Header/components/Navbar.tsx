@@ -28,7 +28,7 @@ export default function NavBar(): ReactElement {
             <ul className="ml-4 flex items-center gap-10 text-White">
               <ListItem href="/about" text="Sobre" />
               <ListItem href="/skills" text="Habilidades" />
-              <ListItem href="/formations" text="Certificações" />
+              <ListItem href="/formations" text="Formações" />
               <ListItem href="/projects" text="Projetos" />
               <ListItem href="/contact" text="Contato" />
             </ul>
