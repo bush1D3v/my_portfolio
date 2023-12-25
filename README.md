@@ -38,7 +38,7 @@ Após o Fork, você **precisará** clonar o repositório forkado para seu **ambi
 
 ```
 git clone https://github.com/{seu-usuario}/my_portfolio.git
-cd linktree
+cd my_portfolio
 ```
 
 ### ⏬ Instalando Dependências
