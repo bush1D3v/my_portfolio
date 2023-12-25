@@ -3,19 +3,19 @@ import { type ReactElement } from "react";
 export default function Loading(): ReactElement {
   return (
     <div
-      className="flex items-center justify-center h-[90dvh]"
+      className="flex items-center justify-center h-[82dvh] lg:h-[76dvh]"
     >
       <button
         disabled
         type="button"
-        className="py-2.5 px-5 me-2 text-sm font-medium text-g rounded-lg border
-        hover:text-Gray focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-White
-        bg-Black2 text-White border-RomanSilver hover:bg-gray-700
-        inline-flex items-center scale-150 ease-in-out duration-300">
+        className="py-2.5 px-10 me-2 text-lg md:text-2xl lg:text-3xl font-medium text-g rounded-lg border
+        hover:text-Gray focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-White bg-Black2 text-White
+        border-RomanSilver hover:bg-White inline-flex items-center scale-150 ease-in-out duration-300"
+      >
         <svg
           aria-hidden="true"
           role="status"
-          className="inline w-4 h-4 me-3 animate-spin"
+          className="inline w-6 h-8 md:w-9 md:h-11 lg:w-10 lg:h-12 me-3 animate-spin"
           viewBox="0 0 100 101"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
