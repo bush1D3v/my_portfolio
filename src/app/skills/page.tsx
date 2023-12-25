@@ -4,10 +4,11 @@ import { ReactElement } from "react";
 
 export default function Skills(): ReactElement {
   return (
-    <div
-      className="flex items-center justify-center h-[82dvh] lg:h-[76dvh]"
+    <main
+      className="flex items-center justify-center h-[69dvh] md:h-[82dvh] lg:h-[76dvh] animate-fade-down
+      animate-ease-in-out"
     >
       <h1>Habilidades</h1>
-    </div>
+    </main>
   );
 }
