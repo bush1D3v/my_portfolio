@@ -8,6 +8,7 @@ import {
 
 import Loading from "../loading";
 
+
 export default function About(): ReactElement {
   const [ isLoading, setIsLoading ] = useState(true);
 
