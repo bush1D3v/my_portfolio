@@ -14,7 +14,7 @@ export default function Footer(): ReactElement {
   return (
     <footer
       className="lg:mb-[3dvh] h-[22dvh] md:h-[9dvh] flex flex-col md:flex-row items-center justify-between
-      md:justify-around m-auto bg-Black2 max-w-screen-xl lg:rounded-xl duration-200 ease-in
+      md:justify-around m-auto lg:mx-8 xl:mx-auto bg-Black2 max-w-screen-xl lg:rounded-xl duration-200 ease-in
       p-5 animate-fade-down animate-ease-in-out"
     >
       <address className="flex md:flex-col w-full lg:w-fit flex-start gap-4 md:gap-2">
