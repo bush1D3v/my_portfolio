@@ -32,7 +32,7 @@ export default function Projects(): ReactElement {
         <Loading />
       ) : (
         <main
-          className="flex items-center justify-center h-[69dvh] md:h-[82dvh] lg:h-[76dvh] animate-fade-down
+          className="flex items-center justify-center min-h-[69dvh] md:min-h-[82dvh] lg:min-h-[76dvh] animate-fade-down
           animate-ease-in-out"
         >
           <h1>Projetos</h1>
