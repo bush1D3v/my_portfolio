@@ -12,14 +12,14 @@ export default function Skills(): ReactElement {
   const [ isLoading, setIsLoading ] = useState(true);
 
   useEffect(() => {
-    const loading = sessionStorage.getItem("aboutLoaded");
+    const loading = sessionStorage.getItem("skillsLoaded");
 
     if (loading !== null) {
       setIsLoading(false);
     } else {
       const timeout = setTimeout(() => {
         setIsLoading(false);
-        sessionStorage.setItem("aboutLoaded", "true");
+        sessionStorage.setItem("skillsLoaded", "true");
       }, 500);
 
       return () => clearTimeout(timeout);
