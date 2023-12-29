@@ -37,8 +37,8 @@ export default function About(): ReactElement {
         <Loading />
       ) : (
         <main
-          className="flex flex-col lg:flex-row items-center justify-center lg:h-[76dvh]
-          animate-fade-down animate-ease-in-out max-w-screen-xl m-auto gap-10 md:gap-20 py-20 lg:py-0"
+          className="flex flex-col lg:flex-row items-center justify-center min-h-[69dvh] md:min-h-[82dvh] gap-10
+          lg:min-h-[76dvh] animate-fade-down animate-ease-in-out max-w-screen-xl m-auto px-10md:gap-20 py-20 lg:py-0"
         >
           <div className="flex h-full lg:w-full items-center justify-center">
             <Image
@@ -65,23 +65,25 @@ export default function About(): ReactElement {
             </p>
             <ul className="md:pl-8 flex flex-col md:flex-row gap-8 mt-10 duration-200 ease-in">
               <li
-                className="cursor-pointer border-White border-2 rounded-3xl px-20 py-8 hover:border-Gray
-                duration-200 ease-in"
+                className="duration-200 ease-in"
               >
                 <Button
                   text="VER RESUMO"
                   link="https://drive.google.com/file/d/17OP9Hz4Hhuh22e_rplmL5tdSYxpMNAEm/view?usp=sharing"
                   icon={<FiUpload />}
+                  border="White"
+                  hover="Gray"
                 />
               </li>
               <li
-                className="cursor-pointer border-Gray border-2 rounded-3xl px-20 py-8 hover:border-White
-                duration-200 ease-in"
+                className="duration-200 ease-in"
               >
                 <Button
                   text="ENVIAR MENSAGEM"
                   link="mailto:victor.jose.lopes.navarro@gmail.com"
                   icon={<BiMailSend />}
+                  border="Gray"
+                  hover="White"
                 />
               </li>
             </ul>
