@@ -12,14 +12,14 @@ export default function Formations(): ReactElement {
   const [ isLoading, setIsLoading ] = useState(true);
 
   useEffect(() => {
-    const loading = sessionStorage.getItem("aboutLoaded");
+    const loading = sessionStorage.getItem("formationsLoaded");
 
     if (loading !== null) {
       setIsLoading(false);
     } else {
       const timeout = setTimeout(() => {
         setIsLoading(false);
-        sessionStorage.setItem("aboutLoaded", "true");
+        sessionStorage.setItem("formationsLoaded", "true");
       }, 500);
 
       return () => clearTimeout(timeout);
