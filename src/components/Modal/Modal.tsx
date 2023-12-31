@@ -15,7 +15,7 @@ export default function Modal({
   if (isOpen) {
     return (
       <div
-        className="absolute z-50 top-[-20dvh] md:fixed md:top-0 md:bottom-0 md:left-0 md:right-0 md:bg-WhiteA10
+        className="absolute z-50 top-[-10dvh] md:fixed md:top-0 md:bottom-0 md:left-0 md:right-0 md:bg-WhiteA10
         duration-200 ease-in"
       >
         <ul
