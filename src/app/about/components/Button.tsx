@@ -8,14 +8,12 @@ interface ButtonProps {
   additionalClass: string;
 }
 
-export default function Button(
-  {
-    link,
-    text,
-    icon,
-    additionalClass
-  }: ButtonProps
-): ReactElement {
+export default function Button({
+  link,
+  text,
+  icon,
+  additionalClass
+}: ButtonProps): ReactElement {
   const className = `text-White font-semibold uppercase flex items-center justify-center duration-200 ease-in px-20 py-8
   border-2 ${additionalClass} rounded-3xl`;
 
