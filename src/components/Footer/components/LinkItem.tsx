@@ -6,9 +6,10 @@ export interface LinkItemProps {
   icon: ReactElement;
 }
 
-export default function LinkItem(
-  { href, icon }: LinkItemProps
-): ReactElement {
+export default function LinkItem({
+  href,
+  icon
+}: LinkItemProps): ReactElement {
   return (
     <li
       className="flex items-center w-16 h-16 border-2 border-WhiteA10 hover:border-White rounded-full
