@@ -125,17 +125,6 @@ export default function SkillCardList(): ReactElement {
         ]}
       />
       <SkillCard
-        icon={<SiJavascript />}
-        title={"JavaScript"}
-        details={[
-          "DOM",
-          "POO",
-          "Promises",
-          "Fetch API",
-          "Tratamento de Exceções"
-        ]}
-      />
-      <SkillCard
         icon={<SiHtml5 />}
         title={"HTML5"}
         details={[
@@ -158,6 +147,16 @@ export default function SkillCardList(): ReactElement {
           "Flexbox/Grid",
           "Especificidade",
           "Media Queries"
+        ]}
+      />
+      <SkillCard
+        icon={<SiJavascript />}
+        title={"JavaScript"}
+        details={[
+          "DOM",
+          "POO",
+          "Promises",
+          "Fetch API",
         ]}
       />
     </ul>
