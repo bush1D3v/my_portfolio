@@ -1,30 +1,13 @@
 "use client";
 
-import {
-  useState,
-  useEffect,
-  type ReactElement
-} from "react";
+import { type ReactElement } from "react";
+
+import { loaderSessionStorage } from "@/functions";
 
 import Loading from "../loading";
 
 export default function Projects(): ReactElement {
-  const [ isLoading, setIsLoading ] = useState(true);
-
-  useEffect(() => {
-    const loading = sessionStorage.getItem("projectsLoaded");
-
-    if (loading !== null) {
-      setIsLoading(false);
-    } else {
-      const timeout = setTimeout(() => {
-        setIsLoading(false);
-        sessionStorage.setItem("projectsLoaded", "true");
-      }, 500);
-
-      return () => clearTimeout(timeout);
-    }
-  }, []);
+  const isLoading: boolean = loaderSessionStorage("projectsLoaded");
 
   return (
     <>
