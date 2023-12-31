@@ -6,9 +6,10 @@ interface LinkItemProps {
   text: string;
 }
 
-export default function ListItem(
-  { href, text }: LinkItemProps
-): ReactElement {
+export default function ListItem({
+  href,
+  text
+}: LinkItemProps): ReactElement {
   return (
     <li>
       <Link

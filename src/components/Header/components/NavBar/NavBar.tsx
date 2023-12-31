@@ -6,8 +6,9 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import {
   ListItem,
   Logo,
-  ButtonTheme
-} from "../components";
+  ButtonTheme,
+  MenuSvg
+} from "./components";
 
 export default function NavBar(): ReactElement {
   const [ isClick, setIsClick ] = useState(false);
@@ -17,7 +18,7 @@ export default function NavBar(): ReactElement {
   };
   return (
     <>
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="w-[90%] mx-auto justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-[9dvh] md:items-center md:justify-between">
           <div className="flex items-center">
             <div className="flex-shrink-0">
@@ -44,20 +45,7 @@ export default function NavBar(): ReactElement {
               onClick={toggleNavbar}
             >
               {isClick ? (
-                <svg
-                  className="h-10 w-10"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                <MenuSvg />
               ) : (
                 <RxHamburgerMenu className="h-10 w-10" />
               )}

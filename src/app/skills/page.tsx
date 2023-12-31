@@ -1,30 +1,15 @@
 "use client";
 
-import {
-  useState,
-  useEffect,
-  type ReactElement
-} from "react";
+import { type ReactElement } from "react";
+
+import { loaderSessionStorage } from "@/functions";
 
 import Loading from "../loading";
+import { SkillCardList } from "./components";
+
 
 export default function Skills(): ReactElement {
-  const [ isLoading, setIsLoading ] = useState(true);
-
-  useEffect(() => {
-    const loading = sessionStorage.getItem("skillsLoaded");
-
-    if (loading !== null) {
-      setIsLoading(false);
-    } else {
-      const timeout = setTimeout(() => {
-        setIsLoading(false);
-        sessionStorage.setItem("skillsLoaded", "true");
-      }, 500);
-
-      return () => clearTimeout(timeout);
-    }
-  }, []);
+  const isLoading: boolean = loaderSessionStorage("skillsLoaded");
 
   return (
     <>
@@ -33,9 +18,9 @@ export default function Skills(): ReactElement {
       ) : (
         <main
           className="flex items-center justify-center min-h-[69dvh] md:min-h-[82dvh] lg:min-h-[76dvh] animate-fade-down
-          animate-ease-in-out"
+          animate-ease-in-out max-w-screen-xl m-auto p-10"
         >
-          <h1>Habilidades</h1>
+          <SkillCardList />
         </main>
       )}
     </>

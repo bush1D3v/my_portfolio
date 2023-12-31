@@ -11,7 +11,6 @@ const config: Config = {
       colors: {
         RomanSilver: "var(--roman-silver)",
         White: "var(--white)",
-        WhiteA5: "var(--white-a5)",
         WhiteA10: "var(--white-a10)",
         LightGray: "var(--light-gray)",
         Gray: "var(--gray)",
