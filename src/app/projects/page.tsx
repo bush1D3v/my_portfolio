@@ -16,7 +16,7 @@ export default function Projects(): ReactElement {
       ) : (
         <main
           className="flex items-center justify-center min-h-[69dvh] md:min-h-[82dvh] lg:min-h-[76dvh] animate-fade-down
-          animate-ease-in-out"
+          animate-ease-in-out max-w-screen-xl p-10 m-auto"
         >
           <h1>Projetos</h1>
         </main>
