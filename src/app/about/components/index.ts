@@ -1,7 +1,5 @@
-import Photo from "./Photo";
-import TextPresentation from "./TextPresentation";
+import AboutDivision from "./AboutDivision";
 
 export {
-  Photo,
-  TextPresentation
+  AboutDivision
 };
