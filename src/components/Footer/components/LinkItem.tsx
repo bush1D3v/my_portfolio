@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { type ReactElement } from "react";
 
-export interface LinkItemProps {
+interface LinkItemProps {
   href: string;
   icon: ReactElement;
 }
@@ -19,6 +19,7 @@ export default function LinkItem({
         className="w-16 h-16 flex items-center justify-center"
         href={href}
         target="_blank"
+        rel="noopener noreferrer"
       >
         {React.cloneElement(icon, { className: "text-3xl text-White duration-200 ease-in" })}
       </Link>
