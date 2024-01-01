@@ -1,4 +1,7 @@
 import { type ReactElement } from "react";
+import { FaHome } from "react-icons/fa";
+
+import { LinkButton } from "@/components";
 
 export default function NotFound(): ReactElement {
   return (
@@ -8,15 +11,16 @@ export default function NotFound(): ReactElement {
         Parece que você tentou acessar uma página que não existe, não é mesmo? 🤔<br />
         Mas não se preocupe! Você pode retornar à nossa aplicação! 😉
       </p>
-      <a
-        type="button"
-        href="/"
-        className="rounded-3xl bg-Gray border-White border-2 text-xl md:text-2xl lg:text-3xl py-4 md:py-5 lg:py-6 px-8
-        md:px-10 lg:px-12 font-bold hover:text-accent transition-all text-White hover:scale-110 hover:shadow-2xl
-        hover:shadow-White duration-200 ease-in"
-      >
-        Retorne a página inicial
-      </a>
+      <LinkButton
+        link={"/"}
+        type={"button"}
+        target={"_self"}
+        text={"Retorne a página inicial"}
+        icon={<FaHome />}
+        additionalClass={`
+          border-White hover:border-Gray text-xl md:text-2xl lg:text-3xl hover:text-accent transition-all
+        `}
+      />
     </main>
   );
 }
