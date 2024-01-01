@@ -15,6 +15,7 @@ export default function ListItem({
       <Link
         className="hover:opacity-50 ease-in duration-200 uppercase font-bold"
         href={href}
+        rel="noopener noreferrer"
       >
         {text}
       </Link>
