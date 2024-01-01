@@ -7,6 +7,7 @@ interface LinkButtonProps {
   text: string;
   icon: ReactElement | null;
   additionalClass: string;
+  target: "_blank" | "_self" | "_parent" | "_top";
 }
 
 export default function LinkButton({
@@ -14,7 +15,8 @@ export default function LinkButton({
   type,
   text,
   icon,
-  additionalClass
+  additionalClass,
+  target
 }: LinkButtonProps): ReactElement {
   const className = `text-White font-semibold flex items-center justify-center duration-75 ease-in px-20 py-8
   border-2 ${additionalClass} rounded-3xl`;
@@ -25,6 +27,7 @@ export default function LinkButton({
         <button
           type={type}
           className={className}
+          rel="noopener noreferrer"
         >
           {text} &nbsp; {icon}
         </button>
@@ -32,7 +35,7 @@ export default function LinkButton({
         <Link
           href={link}
           type={type}
-          target="_blank"
+          target={target}
           rel="noopener noreferrer"
           className={className}
         >
