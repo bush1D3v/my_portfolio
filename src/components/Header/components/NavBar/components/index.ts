@@ -1,11 +1,11 @@
-import ListItem from "./ListItem";
 import Logo from "./Logo";
 import ButtonTheme from "./ButtonTheme";
 import MenuSvg from "./MenuSvg";
+import ItemsList from "./ItemsList";
 
 export {
-  ListItem,
   Logo,
   ButtonTheme,
-  MenuSvg
+  MenuSvg,
+  ItemsList
 };
