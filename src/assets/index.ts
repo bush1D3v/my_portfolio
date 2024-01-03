@@ -9,6 +9,7 @@ import capsulaDoTempo from "./capsula-do-tempo.jpg";
 import robustHabitAcademia from "./robust-habit-academia.jpg";
 import tsbank from "./tsbank.jpg";
 import devorum from "./devorum.jpg";
+import cruzeiroDoSul from "./cruzeiro-do-sul.jpg";
 
 export {
   cubosAcademy,
@@ -21,5 +22,6 @@ export {
   capsulaDoTempo,
   robustHabitAcademia,
   tsbank,
-  devorum
+  devorum,
+  cruzeiroDoSul
 };
