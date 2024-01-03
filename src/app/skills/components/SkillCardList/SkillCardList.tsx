@@ -18,7 +18,7 @@ import { SkillCard } from "./components";
 
 export default function SkillCardList(): ReactElement {
   return (
-    <ul className="flex justify-center gap-8 flex-wrap">
+    <ul className="flex justify-center gap-8 flex-wrap p-10">
       <SkillCard
         icon={<SiNextdotjs />}
         title={"Next"}
