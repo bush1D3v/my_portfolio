@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "../styles/globals.scss";
 import { Suspense, type ReactElement } from "react";
-import Loading from "./loading";
 
+import Loading from "./loading";
 import {
   Footer,
   Header,
