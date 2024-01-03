@@ -4,10 +4,10 @@ import { useState, type ReactElement } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 import {
-  ListItem,
   Logo,
   ButtonTheme,
-  MenuSvg
+  MenuSvg,
+  ItemsList
 } from "./components";
 
 export default function NavBar(): ReactElement {
@@ -26,13 +26,7 @@ export default function NavBar(): ReactElement {
             </div>
           </div>
           <div className="hidden md:flex">
-            <ul className="ml-4 flex items-center gap-10 text-White">
-              <ListItem href="/about" text="Sobre" />
-              <ListItem href="/skills" text="Habilidades" />
-              <ListItem href="/formations" text="Formações" />
-              <ListItem href="/projects" text="Projetos" />
-              <ListItem href="/contact" text="Contato" />
-            </ul>
+            <ItemsList className="ml-4 flex items-center gap-10 text-White" />
           </div>
           <div className="hidden md:flex">
             <ButtonTheme />
@@ -56,16 +50,10 @@ export default function NavBar(): ReactElement {
       {
         isClick && (
           <div className="flex md:hidden">
-            <ul
+            <ItemsList
               className="flex flex-col w-full items-end px-4 pt-2 pb-3 space-y-1 sm:px-3
-            animate-fade-left relative text-White"
-            >
-              <ListItem href="/about" text="Sobre" />
-              <ListItem href="/skills" text="Habilidades" />
-              <ListItem href="/formations" text="Formações" />
-              <ListItem href="/projects" text="Projetos" />
-              <ListItem href="/contact" text="Contato" />
-            </ul>
+              animate-fade-left relative text-White"
+            />
           </div>
         )
       }
