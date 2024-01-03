@@ -4,7 +4,8 @@ import {
   cubosAcademy,
   devQuest,
   dio,
-  cursoEmVideo
+  cursoEmVideo,
+  cruzeiroDoSul
 } from "@/assets";
 
 import { FormationArea } from "./components";
@@ -14,7 +15,32 @@ export default function FormationsList(): ReactElement {
     <ul className="flex gap-10 flex-wrap justify-center p-10">
       <li>
         <FormationArea
-          image={cubosAcademy}
+          title={"Cruzeiro do Sul"}
+          description={
+            `Cursando Engenharia de Software, aprimoro meu domínio em linguagens de programação,
+            adoto metodologias ágeis e utilizo ferramentas avançadas de desenvolvimento. Tenho experiência
+            em análise de requisitos, arquitetura de sistemas, testes de software e gestão de projetos,
+            preparando-me para desafios na criação e aprimoramento de aplicações.`
+          }
+          summaryKeys={[
+            "POO",
+            "Inteligência Artificial",
+            "Sistemas Operacionais",
+            "Modelagem de Sistemas",
+            "Computação em Nuvem",
+            "Modelagem de Dados",
+            "Banco de Dados",
+            "Arquiteturas e padrões de software",
+            "Algoritmos e Estruturas de Dados",
+            "Testes e Qualidade de Software"
+          ]}
+          buttonText={"EM ANDAMENTO..."}
+          buttonHref={null}
+          image={cruzeiroDoSul}
+        />
+      </li>
+      <li>
+        <FormationArea
           title={"Cubos Academy"}
           description={
             `Após passar no processo seletivo do programa bolsa ifood 1000 com mais de 50mil participantes, iniciei
@@ -37,6 +63,7 @@ export default function FormationsList(): ReactElement {
           ]}
           buttonText={"VER CERTIFICADOS ➔"}
           buttonHref="https://drive.google.com/file/d/17pAc42v6-7gC_0OXT0wbYY7VrSJkUanD/view?usp=sharing"
+          image={cubosAcademy}
         />
       </li>
       <li>
