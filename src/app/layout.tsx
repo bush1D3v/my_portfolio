@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "../styles/globals.scss";
-import { Suspense, type ReactElement } from "react";
+import { type ReactElement } from "react";
 
 import {
   Footer,
   Header,
   ThemeProvider
 } from "../components";
-import Loading from "./loading";
 
 const lato = Lato({
   subsets: [ "latin" ],
@@ -30,9 +29,7 @@ export default function RootLayout({
       <body className={lato.className}>
         <ThemeProvider>
           <Header></Header>
-          <Suspense fallback={<Loading />}>
-            {children}
-          </Suspense>
+          {children}
           <Footer></Footer>
         </ThemeProvider>
       </body>
