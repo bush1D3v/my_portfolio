@@ -5,7 +5,6 @@ import { LinkButton } from "@/components";
 
 import { LabelInput } from "./components";
 
-
 export default function Form(): ReactElement {
   return (
     <form
@@ -28,7 +27,7 @@ export default function Form(): ReactElement {
           name="mensagem"
           placeholder="Sua Mensagem"
           className="duration-200 ease-in border-2 border-RomanSilver rounded-2xl px-8 py-4
-          bg-Gray2 font-semibold resize-none w-full"
+          bg-Gray2 font-semibold resize-none w-full placeholder:text-White"
           cols={30}
           rows={3}
           required
