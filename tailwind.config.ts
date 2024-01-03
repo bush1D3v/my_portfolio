@@ -12,7 +12,6 @@ const config: Config = {
         RomanSilver: "var(--roman-silver)",
         White: "var(--white)",
         WhiteA10: "var(--white-a10)",
-        LightGray: "var(--light-gray)",
         Gray: "var(--gray)",
         Gray2: "var(--gray2)",
         DarkGray: "var(--dark-gray)",
