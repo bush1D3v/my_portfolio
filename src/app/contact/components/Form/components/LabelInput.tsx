@@ -18,7 +18,7 @@ export default function LabelInput({
         name={name}
         placeholder={placeholder}
         className="duration-200 ease-in border-2 border-RomanSilver rounded-2xl px-8 py-4
-        bg-Gray2 font-semibold w-full"
+        bg-Gray2 font-semibold w-full placeholder:text-White"
         autoComplete="true"
         required
       />
