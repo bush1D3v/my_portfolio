@@ -18,7 +18,7 @@ export default function LinkButton({
   additionalClass,
   target
 }: LinkButtonProps): ReactElement {
-  const className = `text-White font-semibold flex items-center justify-center duration-75 ease-in px-20 py-8
+  const className = `text-White font-semibold flex items-center justify-center duration-200 ease-in px-20 py-8
   border-2 ${additionalClass} rounded-3xl`;
 
   return (
