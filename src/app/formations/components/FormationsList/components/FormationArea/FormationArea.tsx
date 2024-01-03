@@ -2,15 +2,12 @@ import { type ReactElement } from "react";
 import { type StaticImageData } from "next/image";
 
 import {
-  LinkButton
+  LinkButton,
+  ArrowUp,
+  ImageWithHiddenDescription
 } from "@/components";
 
-import {
-  ArrowUp,
-  FormationTechnologiesSummary,
-  ImageWithHiddenDescription
-} from "./components";
-
+import { FormationTechnologiesSummary } from "./components";
 
 interface FormationAreaProps {
   image: StaticImageData;
@@ -31,14 +28,15 @@ export default function FormationArea({
 }: FormationAreaProps): ReactElement {
   return (
     <article className="flex flex-col gap-16 duration-200 ease-in items-center">
-      <div className="text-center relative">
-        <h3 className="duration-75 ease-in mb-6">{title}</h3>
+      <div className="text-center relative justify-center">
+        <h2 className="duration-75 ease-in mb-6">{title}</h2>
         <ImageWithHiddenDescription
           image={image}
           alternative={"Imagem da plataforma" + title}
           description={description}
+          technologies={null}
         />
-        <ArrowUp />
+        <ArrowUp additionalClasses="-right-4 mt-6" />
       </div>
       <div className="flex flex-col items-center">
         <FormationTechnologiesSummary summaryKeys={summaryKeys} />
