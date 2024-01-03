@@ -15,7 +15,7 @@ export default function About(): ReactElement {
       <Photo />
       <div className="flex flex-col w-full p-4 md:p-10">
         <TextPresentation />
-        <div className="md:pl-8 flex flex-col md:flex-row gap-8 mt-10 duration-200 ease-in">
+        <div className="flex flex-col md:flex-row gap-8 mt-10 duration-200 ease-in">
           <LinkButton
             type="button"
             target={"_blank"}
