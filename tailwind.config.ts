@@ -20,6 +20,7 @@ const config: Config = {
         BlackA10: "var(--black-a10)",
         Yellow: "var(--yellow)",
         Background: "var(--background)",
+        Error: "var(--error)",
       },
     },
   },
