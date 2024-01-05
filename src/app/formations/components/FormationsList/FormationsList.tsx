@@ -12,12 +12,12 @@ import { FormationArea } from "./components";
 
 export default function FormationsList(): ReactElement {
   return (
-    <ul className="flex gap-10 flex-wrap justify-center p-10">
+    <ul className="flex gap-10 flex-wrap justify-around p-10 lg:px-20">
       <li>
         <FormationArea
           title={"Cruzeiro do Sul"}
           description={
-            `Cursando Engenharia de Software, aprimoro meu domínio em linguagens de programação,
+            `Cursando Bacharelado em Engenharia de Software, aprimoro meu domínio em linguagens de programação,
             adoto metodologias ágeis e utilizo ferramentas avançadas de desenvolvimento. Tenho experiência
             em análise de requisitos, arquitetura de sistemas, testes de software e gestão de projetos,
             preparando-me para desafios na criação e aprimoramento de aplicações.`
