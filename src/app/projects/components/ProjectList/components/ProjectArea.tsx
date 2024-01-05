@@ -37,8 +37,8 @@ export default function ProjectArea({
         description={description}
         technologies={technologies}
       />
-      <ArrowUp additionalClasses="bottom-48 right-16" />
-      <div className="flex flex-col gap-4 ml-0 sm:ml-20 mt-auto mb-auto mr-auto bottom-">
+      <ArrowUp additionalClasses="bottom-44 md:bottom-40 right-16" />
+      <div className="flex flex-col gap-4 ml-0 sm:ml-20 mt-auto mb-auto mr-auto">
         <LinkButton
           target={"_blank"}
           link={repoLink}
