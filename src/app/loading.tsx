@@ -3,7 +3,7 @@ import { type ReactElement } from "react";
 export default function Loading(): ReactElement {
   return (
     <div
-      className="flex items-center justify-center h-[82dvh] lg:h-[76dvh]"
+      className="flex items-center justify-center h-[69dvh] md:h-[82dvh] lg:h-[76dvh]"
     >
       <button
         disabled
