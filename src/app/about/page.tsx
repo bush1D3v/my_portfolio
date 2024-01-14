@@ -8,7 +8,7 @@ import { LinkButton } from "@/components";
 import { Photo, TextPresentation } from "./components";
 import Loading from "../loading";
 
-export default function About(): ReactElement {
+export default async function About(): Promise<ReactElement> {
   unstable_noStore();
   return (
     <Suspense fallback={<Loading />}>
