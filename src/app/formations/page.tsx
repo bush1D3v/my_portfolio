@@ -4,7 +4,7 @@ import { unstable_noStore } from "next/cache";
 import { FormationsList } from "./components";
 import Loading from "../loading";
 
-export default function Formations(): ReactElement {
+export default async function Formations(): Promise<ReactElement> {
   unstable_noStore();
   return (
     <Suspense fallback={<Loading />}>
