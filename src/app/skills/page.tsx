@@ -4,7 +4,7 @@ import { unstable_noStore } from "next/cache";
 import { SkillCardList } from "./components";
 import Loading from "../loading";
 
-export default function Skills(): ReactElement {
+export default async function Skills(): Promise<ReactElement> {
   unstable_noStore();
   return (
     <Suspense fallback={<Loading />}>
