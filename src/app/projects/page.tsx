@@ -4,7 +4,7 @@ import { unstable_noStore } from "next/cache";
 import { ProjectList } from "./components";
 import Loading from "../loading";
 
-export default function Projects(): ReactElement {
+export default async function Projects(): Promise<ReactElement> {
   unstable_noStore();
   return (
     <Suspense fallback={<Loading />}>
