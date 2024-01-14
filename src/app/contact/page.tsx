@@ -4,7 +4,7 @@ import { unstable_noStore } from "next/cache";
 import { Form, TextArea } from "./components";
 import Loading from "../loading";
 
-export default function Contact(): ReactElement {
+export default async function Contact(): Promise<ReactElement> {
   unstable_noStore();
   return (
     <Suspense fallback={<Loading />}>
