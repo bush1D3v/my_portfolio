@@ -25,7 +25,8 @@ O meu **Portfólio** é uma aplicação de **histórico profissional**, onde tem
    <img align='center' height='58' width='80' title='Tailwindcss-animated' alt='tailwindcss-animated' src='https://github.com/bush1D3v/my_portfolio_html/assets/133554156/364156ca-f265-4478-bcc3-4a12830c46a7' />
    <img align='center' height='68' width='72' title='Potcss' alt='postcss' src='https://github.com/bush1D3v/my_portfolio/assets/133554156/85b7c73b-e181-4c95-b9de-a8e0ba0523d3' />
    <img align='center' height='70' width='50' title='Axios' alt='axios' src='https://github.com/bush1D3v/tsbank_front/assets/133554156/b9ff307f-3582-4635-ae6e-361215efc742' /> &nbsp; 
-   <img align='center' height='49' width='59' title='Zod' alt='zod' src='https://github.com/bush1D3v/tsbank_front/assets/133554156/5a769805-23e2-4f8b-904d-034b25a982a6' /> &nbsp; &nbsp;
+   <img align='center' height='49' width='59' title='Zod' alt='zod' src='https://github.com/bush1D3v/tsbank_front/assets/133554156/5a769805-23e2-4f8b-904d-034b25a982a6' />
+   <img align='center' height='54' width='68' title='Node.js' alt='nodejs' src='https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg' />
 </div>
 
 # 🖋️ Contribuindo para o Portfólio
