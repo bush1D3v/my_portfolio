@@ -4,9 +4,7 @@ import {
   tsbank,
   devorum,
   linktree,
-  pokeApi,
-  robustHabitAcademia,
-  capsulaDoTempo
+  robustHabitAcademia
 } from "@/assets";
 
 import { ProjectArea } from "./components";
@@ -73,22 +71,6 @@ export default function ProjectList(): ReactElement {
         projectLink={"https://bushi-links.vercel.app"}
       />
       <ProjectArea
-        title="Poke API"
-        subtitle="Poke Fetch API"
-        image={pokeApi}
-        description={`
-              Uma API de Pokédex da região de Kanto, que através da Fetch API no JavaScript, cria requisições de
-              informações para a pokeapi.
-            `}
-        technologies={[
-          "HTML5",
-          "CSS3",
-          "JavaScript",
-        ]}
-        repoLink={"https://github.com/bush1D3v/poke-api"}
-        projectLink={"https://bush1d3v.github.io/poke-api"}
-      />
-      <ProjectArea
         title="R. H. Academia"
         subtitle="Site de Academia"
         image={robustHabitAcademia}
@@ -102,20 +84,6 @@ export default function ProjectList(): ReactElement {
         ]}
         repoLink={"https://github.com/bush1D3v/robust-habit-academia"}
         projectLink={"https://bush1d3v.github.io/robust-habit-academia"}
-      />
-      <ProjectArea
-        title="Time Capsule"
-        subtitle="Cápsula do Tempo"
-        image={capsulaDoTempo}
-        description={`
-              Uma cápsula do tempo demonstrando com detalhes os meus primeiros 3 meses de estudos na programação.
-            `}
-        technologies={[
-          "HTML5",
-          "CSS3",
-        ]}
-        repoLink={"https://github.com/bush1D3v/capsula-do-tempo"}
-        projectLink={"https://bush1d3v.github.io/capsula-do-tempo"}
       />
     </ul>
   );
