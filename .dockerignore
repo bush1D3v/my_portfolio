@@ -1,0 +1,8 @@
+node_modules
+.dockerignore
+.editorconfig
+.eslintrc.json
+.gitignore
+LICENSE
+README.md
+vercel.json
