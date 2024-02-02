@@ -7,6 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "docker-build": "docker build -t my_portfolio .",
+    "docker-start": "docker run -d --name my_portfolio -p 3000:3000 my_portfolio || docker start my_portfolio",
+    "docker-stop": "docker stop my_portfolio",
     "lint": "next lint"
   },
   "keywords": [
