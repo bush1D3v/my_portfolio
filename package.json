@@ -41,6 +41,7 @@
     "react-hook-form": "^7.49.2",
     "react-icons": "^4.12.0",
     "sass": "^1.69.5",
+    "sharp": "^0.33.2",
     "tailwindcss-animated": "^1.0.1",
     "zod": "^3.22.4"
   },
