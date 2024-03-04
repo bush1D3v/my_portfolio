@@ -9,7 +9,7 @@ export default function FormationTechnologiesSummary({
 }: FormationTechnologiesSummaryProps): ReactElement {
   return (
     <details className="mb-8">
-      <summary className="text-White cursor-pointer w-fit duration-75 ease-in">
+      <summary className="text-White self-center text-center w-fit cursor-pointer duration-75 ease-in m-auto">
         Grade Curricular
       </summary>
       <ul className="flex flex-wrap max-w-[400px]">
