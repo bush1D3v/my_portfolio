@@ -1,14 +1,13 @@
 "use client";
 
 import { useState, type ReactElement } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
 
 import {
   Logo,
   ButtonTheme,
-  MenuSvg,
   ItemsList
 } from "./components";
+import HamburguerMenu from "./components/HamburguerMenu/HamburguerMenu";
 
 export default function NavBar(): ReactElement {
   const [ isClick, setIsClick ] = useState(false);
@@ -33,17 +32,10 @@ export default function NavBar(): ReactElement {
           </div>
           <div className="md:hidden flex items-center">
             <ButtonTheme />
-            <button
-              className="inline-flex items-center justify-center p-2 rounded-md text-White focus:outline-none
-              focus:ring-2 focus:ring-inset focus:ring-White duration-200 ease-in"
-              onClick={toggleNavbar}
-            >
-              {isClick ? (
-                <MenuSvg />
-              ) : (
-                <RxHamburgerMenu className="h-10 w-10" />
-              )}
-            </button>
+            <HamburguerMenu
+              isClick={isClick}
+              setIsClick={toggleNavbar}
+            />
           </div>
         </div>
       </nav>
