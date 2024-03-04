@@ -1,11 +1,11 @@
 import Logo from "./Logo";
 import ButtonTheme from "./ButtonTheme";
-import MenuSvg from "./MenuSvg";
 import ItemsList from "./ItemsList";
+import HamburguerMenu from "./HamburguerMenu";
 
 export {
   Logo,
   ButtonTheme,
-  MenuSvg,
-  ItemsList
+  ItemsList,
+  HamburguerMenu
 };
