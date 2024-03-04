@@ -27,14 +27,18 @@ export default function ButtonTheme(): ReactElement {
   };
 
   return (
-    <label htmlFor="change-theme" id="switch" className="mr-8 md:mr-0">
+    <label
+      htmlFor="change-theme" aria-label="Change theme"
+      aria-labelledby="sunMoon" id="switch" className="mr-8 md:mr-0"
+    >
       <input
         type="checkbox"
         checked={theme === "light" || (initialRender && theme === "dark")}
         onChange={handleThemeChange}
+        aria-label="Change theme"
         id="change-theme"
       />
-      <span id="sunMoon"></span>
+      <span id="sunMoon" aria-label="Change theme"></span>
     </label>
   );
 }
