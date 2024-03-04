@@ -15,7 +15,7 @@ export default function FormationsList(): ReactElement {
     <ul className="flex gap-10 flex-wrap justify-around p-10 lg:px-20">
       <li>
         <FormationArea
-          title={"Cruzeiro do Sul"}
+          title="Cruzeiro do Sul"
           description={
             `Cursando Bacharelado em Engenharia de Software, aprimoro meu domínio em linguagens de programação,
             adoto metodologias ágeis e utilizo ferramentas avançadas de desenvolvimento. Tenho experiência
@@ -34,14 +34,14 @@ export default function FormationsList(): ReactElement {
             "Algoritmos e Estruturas de Dados",
             "Testes e Qualidade de Software"
           ]}
-          buttonText={"EM ANDAMENTO..."}
+          buttonText="EM ANDAMENTO..."
           buttonHref={null}
           image={cruzeiroDoSul}
         />
       </li>
       <li>
         <FormationArea
-          title={"Cubos Academy"}
+          title="Cubos Academy"
           description={
             `Após passar no processo seletivo do programa bolsa ifood 1000 com mais de 50mil participantes, iniciei
             meus estudos como bolsista na Cubos, pelo curso de Desenvolvimento de Software com foco em Back-end.
@@ -61,14 +61,14 @@ export default function FormationsList(): ReactElement {
             "Marketing Pessoal",
             "Metodologias Ágeis"
           ]}
-          buttonText={"VER CERTIFICADOS ➔"}
+          buttonText="VER CERTIFICADOS ➔"
           buttonHref="https://drive.google.com/file/d/17pAc42v6-7gC_0OXT0wbYY7VrSJkUanD/view?usp=sharing"
           image={cubosAcademy}
         />
       </li>
       <li>
         <FormationArea
-          title={"Dev Quest"}
+          title="Dev Quest"
           description={
             `Curso de Desenvolvimento Web FullStack, que através das inúmeras monitorias, mentorias, desafios
             corrigidos por desenvolvedores experientes, conteúdos diretos e organizados, e análise de redes e
@@ -91,14 +91,14 @@ export default function FormationsList(): ReactElement {
             "Marketing Pessoal",
             "Mídias Sociais"
           ]}
-          buttonText={"EM ANDAMENTO..."}
-          buttonHref={null}
+          buttonText="VER CERTIFICADOS ➔"
+          buttonHref="https://drive.google.com/file/d/1oMZ0-IiZEKZkDo7Q6hQ-XaqnOg-U9flK/view?usp=sharing"
           image={devQuest}
         />
       </li>
       <li>
         <FormationArea
-          title={"DIO"}
+          title="DIO"
           description={
             `Após ser selecionado para uma das 75mil bolsas do Bootcamp Santander, iniciei meus estudos no Curso de
             Desenvolvimento Web Fullstack - Java + Angular. Abordando desde os temas mais simples, como anotações dos
@@ -117,14 +117,14 @@ export default function FormationsList(): ReactElement {
             "MongoDB",
             "API REST"
           ]}
-          buttonText={"VER CERTIFICADOS ➔"}
-          buttonHref={"https://drive.google.com/file/d/148owD9V2PAPU7YNWxjTlbNgr0eE9-Rpn/view?usp=sharing"}
+          buttonText="VER CERTIFICADOS ➔"
+          buttonHref="https://drive.google.com/file/d/148owD9V2PAPU7YNWxjTlbNgr0eE9-Rpn/view?usp=sharing"
           image={dio}
         />
       </li>
       <li>
         <FormationArea
-          title={"Curso em Vídeo"}
+          title="Curso em Vídeo"
           description={
             `Sendo a plataforma em que realizei meus primeiros cursos, o professor Guanabara me acompanhou nos meus
             primeiros passos, sendo eles meus 3 primeiros meses de estudos, onde foquei em criar uma sólida lógica de
@@ -139,8 +139,8 @@ export default function FormationsList(): ReactElement {
             "Git / GitHub",
             "Portugol Studio"
           ]}
-          buttonText={"VER CERTIFICADOS ➔"}
-          buttonHref={"https://drive.google.com/file/d/1UNrji4V1htTka5YgdPTYk9Q0Smi0UFJ9/view?usp=sharing"}
+          buttonText="VER CERTIFICADOS ➔"
+          buttonHref="https://drive.google.com/file/d/1UNrji4V1htTka5YgdPTYk9Q0Smi0UFJ9/view?usp=sharing"
           image={cursoEmVideo}
         />
       </li>
