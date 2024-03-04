@@ -2,6 +2,7 @@ import { type ReactElement } from "react";
 import { FaHome } from "react-icons/fa";
 
 import { LinkButton } from "@/components";
+import { HOME } from "@/utils/routerPaths";
 
 export default function NotFound(): ReactElement {
   return (
@@ -12,7 +13,7 @@ export default function NotFound(): ReactElement {
         Mas não se preocupe! Você pode retornar à nossa aplicação! 😉
       </p>
       <LinkButton
-        link={"/"}
+        link={HOME}
         type={"button"}
         target={"_self"}
         text={"Retorne a página inicial"}

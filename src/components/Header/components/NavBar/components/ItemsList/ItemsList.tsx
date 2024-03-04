@@ -1,5 +1,13 @@
 import { type ReactElement } from "react";
 
+import {
+  ABOUT,
+  CONTACT,
+  FORMATIONS,
+  PROJECTS,
+  SKILLS
+} from "@/utils/routerPaths";
+
 import { ListItem } from "./components";
 
 interface ItemsListProps {
@@ -11,11 +19,11 @@ export default function ItemsList({
 }: ItemsListProps): ReactElement {
   return (
     <ul className={className}>
-      <ListItem href="/about" text="Sobre" />
-      <ListItem href="/skills" text="Habilidades" />
-      <ListItem href="/formations" text="Formações" />
-      <ListItem href="/projects" text="Projetos" />
-      <ListItem href="/contact" text="Contato" />
+      <ListItem href={ABOUT} text="Sobre" />
+      <ListItem href={SKILLS} text="Habilidades" />
+      <ListItem href={FORMATIONS} text="Formações" />
+      <ListItem href={PROJECTS} text="Projetos" />
+      <ListItem href={CONTACT} text="Contato" />
     </ul>
   );
 }
