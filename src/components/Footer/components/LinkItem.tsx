@@ -4,11 +4,13 @@ import React, { type ReactElement } from "react";
 interface LinkItemProps {
   href: string;
   icon: ReactElement;
+  ariaLabel: string;
 }
 
 export default function LinkItem({
   href,
-  icon
+  icon,
+  ariaLabel
 }: LinkItemProps): ReactElement {
   return (
     <li
@@ -20,6 +22,7 @@ export default function LinkItem({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={ariaLabel}
       >
         {React.cloneElement(icon, { className: "text-3xl text-White duration-200 ease-in" })}
       </Link>
