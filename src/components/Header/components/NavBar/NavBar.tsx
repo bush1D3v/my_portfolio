@@ -5,9 +5,9 @@ import { useState, type ReactElement } from "react";
 import {
   Logo,
   ButtonTheme,
-  ItemsList
+  ItemsList,
+  HamburguerMenu
 } from "./components";
-import HamburguerMenu from "./components/HamburguerMenu/HamburguerMenu";
 
 export default function NavBar(): ReactElement {
   const [ isClick, setIsClick ] = useState(false);
