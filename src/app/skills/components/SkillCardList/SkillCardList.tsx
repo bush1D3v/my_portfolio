@@ -12,7 +12,8 @@ import {
   SiJavascript,
   SiHtml5,
   SiCss3,
-  SiExpress
+  SiExpress,
+  SiNestjs
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -33,14 +34,26 @@ export default function SkillCardList(): ReactElement {
         ]}
       />
       <SkillCard
-        icon={<SiReact />}
-        title={"React"}
+        icon={<SiNestjs />}
+        title={"Nest"}
         details={[
-          "Props",
-          "Hooks",
+          "Decorators",
+          "Clean Arch",
+          "Modules",
+          "SOLID",
+          "POO",
+        ]}
+      />
+      <SkillCard
+        icon={<TbBrandReactNative />}
+        title={"React Native"}
+        details={[
+          "Integração de APIs",
+          "Módulos Nativos",
+          "Fundamentals",
+          "Navigation",
+          "Contextos",
           "Estados",
-          "Componentes",
-          "Ciclo de vida",
         ]}
       />
       <SkillCard
@@ -56,15 +69,14 @@ export default function SkillCardList(): ReactElement {
         ]}
       />
       <SkillCard
-        icon={<TbBrandReactNative />}
-        title={"React Native"}
+        icon={<SiReact />}
+        title={"React"}
         details={[
-          "Integração de APIs",
-          "Módulos Nativos",
-          "Fundamentals",
-          "Navigation",
-          "Contextos",
+          "Props",
+          "Hooks",
           "Estados",
+          "Componentes",
+          "Ciclo de vida",
         ]}
       />
       <SkillCard
