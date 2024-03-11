@@ -5,7 +5,8 @@ import {
   devQuest,
   dio,
   cursoEmVideo,
-  cruzeiroDoSul
+  cruzeiroDoSul,
+  descomplica
 } from "@/assets";
 
 import { FormationArea } from "./components";
@@ -142,6 +143,31 @@ export default function FormationsList(): ReactElement {
           buttonText="VER CERTIFICADOS ➔"
           buttonHref="https://drive.google.com/file/d/1UNrji4V1htTka5YgdPTYk9Q0Smi0UFJ9/view?usp=sharing"
           image={cursoEmVideo}
+        />
+      </li>
+      <li>
+        <FormationArea
+          title="Descomplica"
+          description={
+            `Curso abrangente que visa aprimorar habilidades profissionais em quatro áreas-chave:
+            Organização, Banco de dados, Coaching e Redes de computadores.
+            Fundamentos de Banco de Dados
+            Organização e Produtividade
+            Coaching e Planejamento de Carreiras
+            Fundamentos de Redes de Computadores`
+          }
+          summaryKeys={[
+            "SQL",
+            "NO SQL",
+            "Git / GitHub",
+            "Redes e Computadores",
+            "Marketing",
+            "Soft Skills",
+            "Desenvolvimento de Software"
+          ]}
+          buttonText="VER CERTIFICADOS ➔"
+          buttonHref="https://drive.google.com/file/d/1IVFBCVg4urota-8TccXn1d9BZVwmRDuX/view?usp=sharing"
+          image={descomplica}
         />
       </li>
     </ul>
