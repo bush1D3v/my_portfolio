@@ -8,6 +8,7 @@ import robustHabitAcademia from "./robust-habit-academia.jpg";
 import tsbank from "./tsbank.jpg";
 import devorum from "./devorum.jpg";
 import cruzeiroDoSul from "./cruzeiro-do-sul.jpg";
+import descomplica from "./descomplica.jpg";
 
 export {
   cubosAcademy,
@@ -19,5 +20,6 @@ export {
   robustHabitAcademia,
   tsbank,
   devorum,
-  cruzeiroDoSul
+  cruzeiroDoSul,
+  descomplica
 };
