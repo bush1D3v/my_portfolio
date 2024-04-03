@@ -24,7 +24,7 @@ export default async function About(): Promise<ReactElement> {
               type="button"
               target={"_blank"}
               text="VER CURRÍCULO"
-              link="https://drive.google.com/file/d/17OP9Hz4Hhuh22e_rplmL5tdSYxpMNAEm/view?usp=sharing"
+              link="https://drive.google.com/file/d/1JvSzncGZYl3EiyNlNiSp_4hvayIn8Cid/view?usp=sharing"
               icon={<FiUpload />}
               additionalClass="border-White hover:border-Gray"
             />
