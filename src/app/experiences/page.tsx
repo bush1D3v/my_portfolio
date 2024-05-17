@@ -36,7 +36,7 @@ export default function Experiences(): ReactElement {
                 habilidades técnicas e soluções de software inovadoras. <br />
                 Trabalhando no projeto Nasajon ERP, desenvolvo testes automatizados para
                 garantir a qualidade do software, atualização da documentação e criação de
-                ovas funcionalidades inovadoras e aprovadas pelo mercado. <br />
+                funcionalidades inovadoras e aprovadas pelo mercado. <br />
                 Trabalhando também no projeto GP (Gestão de projetos), desenvolvo e
                 atualizo interfaces gráficas, além de criar e atualizar testes automatizados
                 para garantir a qualidade das entregas.</p>}
@@ -57,11 +57,11 @@ export default function Experiences(): ReactElement {
               title="SouJunior Labs"
               description="Desenvolvedor Front-end"
               data="2023 - 2024"
-              resume={<p>Projetos voluntários de Desenvolvimento de Software em equipe utilizando
+              resume={<p>Produzi projetos voluntários de Desenvolvimento de Software em equipe utilizando
                 metodologias ágeis, jira, miro e outras tecnologias para acompanhamento dos projetos. <br />
                 Trabalhei no projeto DesenvolvimentoXP, um site para iniciantes de programação terem
-                seu primeiro contato com projetos em equipe, atualizo interfaces gráficas, além de criar
-                e atualizar testes automatizados para garantir a qualidade das entregas.</p>}
+                seu primeiro contato com projetos em equipe, onde refatoro interfaces gráficas e crio
+                e atualizo testes automatizados, garantindo a qualidade das entregas.</p>}
               link="https://labs.soujunior.tech/"
               summaryKeys={[
                 [ <SiAngular key="angular soujunior" />, "Angular" ],
