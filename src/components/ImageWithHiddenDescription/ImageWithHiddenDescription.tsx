@@ -1,31 +1,33 @@
 import { type ReactElement } from "react";
-import Image, { type StaticImageData } from "next/image";
+import { type StaticImageData } from "next/image";
 
 import { TechnologiesList } from "./components";
+import ImageSkeletonLoader from "../ImageSkeletonLoader/ImageSkeletonLoader";
 
 interface ImageWithHiddenDescriptionProps {
   image: StaticImageData;
   alternative: string;
   description: string;
   technologies: string[] | null;
+  sessionStorageItem: string;
 }
 
 export default function ImageWithHiddenDescription({
   image,
   alternative,
   description,
-  technologies
+  technologies,
+  sessionStorageItem
 }: ImageWithHiddenDescriptionProps): ReactElement {
   return (
     <div className="group relative flex flex-col w-fit h-full duration-200 ease-in cursor-pointer">
-      <Image
+      <ImageSkeletonLoader
         src={image}
         alt={alternative}
-        priority={true}
-        quality={100}
-        width={400}
         height={400}
-        decoding="async"
+        width={400}
+        loading="eager"
+        sessionStorageItem={sessionStorageItem}
         className="rounded-3xl sm:w-[400px] sm:h-[400px]"
       />
       <div

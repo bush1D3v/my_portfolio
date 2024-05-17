@@ -1,8 +1,8 @@
-import Image, { type StaticImageData } from "next/image";
+import { type StaticImageData } from "next/image";
 import Link from "next/link";
 import { type ReactElement } from "react";
 
-import { LanguageLists } from "./components";
+import { ImageSkeletonLoader, LanguageLists } from "./components";
 
 interface CardProps {
   image: StaticImageData;
@@ -32,7 +32,15 @@ export default function Card({
           target="_blank"
           className="hover:opacity-50 cursor-pointer duration-200 ease-in"
         >
-          <Image src={image} alt={`${title} Logo`} className="rounded-full" width={80} height={80} />
+          <ImageSkeletonLoader
+            src={image}
+            alt={`${title} Logo`}
+            height={80}
+            width={80}
+            loading="eager"
+            sessionStorageItem={"card"}
+            className="rounded-full"
+          />
         </Link>
         <div>
           <h3 className="duration-100 ease-in-out">{title}</h3>

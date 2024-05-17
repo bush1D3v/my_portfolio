@@ -35,6 +35,7 @@ export default function FormationArea({
           alternative={"Imagem da plataforma" + title}
           description={description}
           technologies={null}
+          sessionStorageItem="formation"
         />
         <ArrowUp additionalClasses="-right-4 mt-6" />
       </div>

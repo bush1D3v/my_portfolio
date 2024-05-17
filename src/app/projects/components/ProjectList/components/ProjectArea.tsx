@@ -36,6 +36,7 @@ export default function ProjectArea({
         alternative={"Imagem de " + title}
         description={description}
         technologies={technologies}
+        sessionStorageItem="project"
       />
       <ArrowUp additionalClasses="bottom-44 md:bottom-40 right-16" />
       <div className="flex flex-col gap-4 ml-0 sm:ml-20 mt-auto mb-auto mr-auto">
