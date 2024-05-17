@@ -29,10 +29,10 @@ export default function NavBar(): ReactElement {
             <ItemsList className="ml-4 flex items-center gap-10 text-White" />
           </div>
           <div className="hidden min-[900px]:flex">
-            <ButtonTheme id={"button-theme"} />
+            <ButtonTheme id={"button-theme"} ariaLabel={"Change Theme"} />
           </div>
           <div className="min-[900px]:hidden flex items-center">
-            <ButtonTheme id={"button-theme2"} />
+            <ButtonTheme id={"button-theme2"} ariaLabel={"Change Theme2"} />
             <HamburguerMenu
               isClick={isClick}
               setIsClick={toggleNavbar}

@@ -10,10 +10,12 @@ import "./style/buttonTheme.css";
 
 interface ButtonThemeProps {
   id: string;
+  ariaLabel: string;
 }
 
 export default function ButtonTheme({
-  id
+  id,
+  ariaLabel
 }: ButtonThemeProps): ReactElement {
   const { theme, setTheme } = useTheme();
   const [ initialRender, setInitialRender ] = useState(true);
@@ -34,17 +36,17 @@ export default function ButtonTheme({
 
   return (
     <label
-      htmlFor={id} aria-label="Change theme"
+      htmlFor={id} aria-label={ariaLabel}
       aria-labelledby="sunMoon" id="switch" className="mr-8 min-[900px]:mr-0"
     >
       <input
         type="checkbox"
         checked={theme === "light" || (initialRender && theme === "dark")}
         onChange={handleThemeChange}
-        aria-label="Change theme"
+        aria-label={ariaLabel}
         id={id}
       />
-      <span id="sunMoon" aria-label="Change theme"></span>
+      <span id="sunMoon" aria-label={ariaLabel}></span>
     </label>
   );
 }
