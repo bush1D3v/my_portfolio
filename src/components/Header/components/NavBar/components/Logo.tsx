@@ -17,6 +17,7 @@ export default function Logo(): ReactElement {
           alt="Logo"
           loading="eager"
           className="dark:brightness-100 brightness-0 w-20 cursor-pointer duration-200 ease-in"
+          priority={true}
         />
       </Link>
     </div>
