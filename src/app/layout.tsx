@@ -16,8 +16,8 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Victor Navarro - Software Developer",
-  description: "Portfólio profissional de Victor Navarro (bush1D3v), Software Developer",
+  title: "Victor Navarro | Software Engineer",
+  description: "Portfólio Profissional de Victor Navarro (bush1D3v), Engenheiro de Software",
 };
 
 export default function RootLayout({
@@ -26,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode
 }): ReactElement {
   return (
-    <html lang="pt-br">
-      <body className={lato.className}>
+    <html lang="pt-br" suppressHydrationWarning={true}>
+      <body className={lato.className} suppressHydrationWarning={true}>
         <ThemeProvider>
           <Header></Header>
           <Suspense fallback={<Loading />}>
