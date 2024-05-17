@@ -9,6 +9,8 @@ import tsbank from "./tsbank.jpg";
 import devorum from "./devorum.jpg";
 import cruzeiroDoSul from "./cruzeiro-do-sul.jpg";
 import descomplica from "./descomplica.jpg";
+import nasajon from "./nasajon.png";
+import souJunior from "./sou-junior.png";
 
 export {
   cubosAcademy,
@@ -21,5 +23,7 @@ export {
   tsbank,
   devorum,
   cruzeiroDoSul,
-  descomplica
+  descomplica,
+  nasajon,
+  souJunior
 };
