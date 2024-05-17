@@ -1,11 +1,9 @@
 import { Suspense, type ReactElement } from "react";
-import { unstable_noStore } from "next/cache";
 
 import { SkillCardList } from "./components";
 import Loading from "../loading";
 
 export default async function Skills(): Promise<ReactElement> {
-  unstable_noStore();
   return (
     <Suspense fallback={<Loading />}>
       <main

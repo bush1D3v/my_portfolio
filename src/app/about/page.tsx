@@ -1,7 +1,6 @@
 import { Suspense, type ReactElement } from "react";
 import { FiUpload } from "react-icons/fi";
 import { BiMailSend } from "react-icons/bi";
-import { unstable_noStore } from "next/cache";
 
 import { LinkButton } from "@/components";
 
@@ -9,7 +8,6 @@ import { Photo, TextPresentation } from "./components";
 import Loading from "../loading";
 
 export default async function About(): Promise<ReactElement> {
-  unstable_noStore();
   return (
     <Suspense fallback={<Loading />}>
       <main
