@@ -1,3 +1,4 @@
 import LanguageLists from "./LanguageLists";
+import ImageSkeletonLoader from "./ImageSkeletonLoader";
 
-export { LanguageLists };
+export { LanguageLists, ImageSkeletonLoader };
