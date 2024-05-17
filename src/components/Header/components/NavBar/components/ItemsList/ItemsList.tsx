@@ -5,7 +5,8 @@ import {
   CONTACT,
   FORMATIONS,
   PROJECTS,
-  SKILLS
+  SKILLS,
+  EXPERIENCES
 } from "@/utils/routerPaths";
 
 import { ListItem } from "./components";
@@ -21,6 +22,7 @@ export default function ItemsList({
     <ul className={className}>
       <ListItem href={ABOUT} text="Sobre" />
       <ListItem href={SKILLS} text="Habilidades" />
+      <ListItem href={EXPERIENCES} text="Experiências" />
       <ListItem href={FORMATIONS} text="Formações" />
       <ListItem href={PROJECTS} text="Projetos" />
       <ListItem href={CONTACT} text="Contato" />
