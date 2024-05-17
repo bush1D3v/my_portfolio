@@ -1,8 +1,8 @@
 import { type ReactElement } from "react";
 import {
   SiJest,
-  SiTypescript,
   SiReact,
+  SiTypescript,
   SiNodedotjs,
   SiNextdotjs,
   SiTailwindcss,
@@ -13,9 +13,12 @@ import {
   SiHtml5,
   SiCss3,
   SiExpress,
-  SiNestjs
+  SiNestjs,
+  SiActix,
+  SiRedis
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
+import { FaRust } from "react-icons/fa6";
 
 import { SkillCard } from "./components";
 
@@ -57,6 +60,18 @@ export default function SkillCardList(): ReactElement {
         ]}
       />
       <SkillCard
+        icon={<SiActix />}
+        title={"Actix"}
+        details={[
+          "Swagger Docs",
+          "Modules",
+          "RESTful",
+          "Testing",
+          "MVC",
+          "POO",
+        ]}
+      />
+      <SkillCard
         icon={<SiTypescript />}
         title={"TypeScript"}
         details={[
@@ -69,14 +84,49 @@ export default function SkillCardList(): ReactElement {
         ]}
       />
       <SkillCard
-        icon={<SiReact />}
-        title={"React"}
+        icon={<FaRust />}
+        title={"Rust"}
         details={[
-          "Props",
-          "Hooks",
-          "Estados",
-          "Componentes",
-          "Ciclo de vida",
+          "Ownership",
+          "Lifetimes",
+          "Borrowing",
+          "Enums",
+          "Mutability",
+        ]}
+      />
+      <SkillCard
+        icon={<SiPhp />}
+        title={"PHP"}
+        details={[
+          "POO",
+          "Módulos",
+          "Symfony",
+          "Codeception",
+          "Sessões e Cookies",
+          "Tratamento de Exceções",
+          "Manipulação de Arquivos e Diretórios",
+        ]}
+      />
+      <SkillCard
+        icon={<SiRedis />}
+        title={"Redis"}
+        details={[
+          "Dimensionamento",
+          "Escalabilidade",
+          "Memória",
+          "Sessões",
+          "Cache"
+        ]}
+      />
+      <SkillCard
+        icon={<SiPostgresql />}
+        title={"PostgreSQL"}
+        details={[
+          "Consultas SQL",
+          "Tabelas e Esquemas",
+          "Funções de Agregação",
+          "Agrupamento de Dados",
+          "Chaves Primárias e Estrangeiras",
         ]}
       />
       <SkillCard
@@ -88,17 +138,6 @@ export default function SkillCardList(): ReactElement {
           "Envio de E-mails",
           "Autenticação e Criptografia",
           "Conexão com Banco de Dados",
-        ]}
-      />
-      <SkillCard
-        icon={<SiExpress />}
-        title={"Express"}
-        details={[
-          "Criptografia",
-          "Jest Testing",
-          "Clean Arch",
-          "Swagger",
-          "CORS",
         ]}
       />
       <SkillCard
@@ -125,6 +164,28 @@ export default function SkillCardList(): ReactElement {
         ]}
       />
       <SkillCard
+        icon={<SiExpress />}
+        title={"Express"}
+        details={[
+          "Criptografia",
+          "Jest Testing",
+          "Clean Arch",
+          "Swagger",
+          "CORS",
+        ]}
+      />
+      <SkillCard
+        icon={<SiReact />}
+        title={"React"}
+        details={[
+          "Props",
+          "Hooks",
+          "Estados",
+          "Componentes",
+          "Ciclo de vida",
+        ]}
+      />
+      <SkillCard
         icon={<SiSass />}
         title={"SASS"}
         details={[
@@ -134,30 +195,6 @@ export default function SkillCardList(): ReactElement {
           "Variáveis SASS",
           "Herança de Seletores",
           "Aninhamento de Regras"
-        ]}
-      />
-      <SkillCard
-        icon={<SiPostgresql />}
-        title={"PostgreSQL"}
-        details={[
-          "Consultas SQL",
-          "Tabelas e Esquemas",
-          "Funções de Agregação",
-          "Agrupamento de Dados",
-          "Chaves Primárias e Estrangeiras",
-        ]}
-      />
-      <SkillCard
-        icon={<SiPhp />}
-        title={"PHP"}
-        details={[
-          "POO",
-          "Módulos",
-          "Symfony",
-          "Codeception",
-          "Sessões e Cookies",
-          "Tratamento de Exceções",
-          "Manipulação de Arquivos e Diretórios",
         ]}
       />
       <SkillCard
