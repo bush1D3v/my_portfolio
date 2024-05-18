@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { type ReactElement } from "react";
 
 export const metadata: Metadata = {
-  title: "Experiências | Victor navarro",
+  title: "Experiências | Victor Navarro",
   description: "Experiências de Victor Navarro (bush1D3v), Engenheiro de Software"
 };
 
