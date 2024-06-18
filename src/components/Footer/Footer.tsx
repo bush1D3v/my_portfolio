@@ -26,7 +26,7 @@ export default function Footer(): ReactElement {
             ariaLabel="Github Link"
           />
           <LinkItem
-            href="https://www.linkedin.com/in/vj021/"
+            href="https://www.linkedin.com/in/devnavarro/"
             icon={<FaLinkedin />}
             ariaLabel="Linkedin Link"
           />
