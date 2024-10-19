@@ -2,20 +2,22 @@ import { Suspense, type ReactElement } from "react";
 import {
   SiTypescript,
   SiPhp,
-  SiJavascript,
   SiAngular,
-  SiSymfony,
-  SiCodeceptjs,
   SiCss3,
   SiDocker,
-  SiPostgresql
+  SiPostgresql,
+  SiSwagger,
+  SiMariadb,
+  SiVuedotjs,
+  SiNodedotjs,
 } from "react-icons/si";
+import { FaLess } from "react-icons/fa";
+import Image from "next/image";
 
-import { nasajon, souJunior } from "@/assets";
+import { nasajon, souJunior, kevi, phpunit, slimphp } from "@/assets";
 
 import Loading from "../loading";
 import { Card } from "./components";
-
 
 export default function Experiences(): ReactElement {
   return (
@@ -25,6 +27,31 @@ export default function Experiences(): ReactElement {
         animate-fade-down animate-ease-in-out max-w-screen-lg m-auto py-8"
       >
         <ul className="flex flex-col items-center justify-center gap-20">
+          <li key={"kevi"}>
+            <Card
+              image={kevi}
+              title="Kevi"
+              description="Desenvolvedor Full-Stack"
+              data="2024 - Presente"
+              resume={<p>Desenvolvendo de ponto a ponta as integrações, automações e novas features na Kevi, impacto todos os seus clientes , principalmente, seus cases de maior sucesso.<br />
+                Desenvolvendo com foco em melhorias de fluxo de usuário e automações, assim como implementar novas integrações e disparadores aos clientes, desenvolvo testes e documentações, otimizo o processamento de resposta ao usuário com minhas experiências em PHP e Vue.js.<br />
+                Trabalhando de forma autônoma, também tenho constante contato com clientes, negociações, e importante calls para discutirmos escalabilidade do negócio, melhoria de performance e possíveis novas melhorias no produto.
+              </p>}
+              link="https://kevi.com.br/"
+              summaryKeys={[
+                [ <SiPhp key="php kevi" />, "PHP" ],
+                [ <SiVuedotjs key="vuejs kevi" />, "Vue.js" ],
+                [ <Image src={slimphp} alt="slimphp icon" key="slim_php kevi"
+                  className="filter invert-0 brightness-0 dark:invert duration-300 ease-in" />, "Slim PHP" ],
+                [ <SiDocker key="docker kevi" />, "Docker" ],
+                [ <SiMariadb key="mariadb kevi" />, "MariaDB" ],
+                [ <Image src={phpunit} alt="phpunit icon" key="phpunit kevi"
+                  className="filter invert-0 brightness-0 dark:invert duration-300 ease-in" />, "PHPUnit" ],
+                [ <SiSwagger key="swagger kevi" />, "Swagger" ],
+                [ <FaLess key="less kevi" />, "Less" ],
+              ]}
+            />
+          </li>
           <li key={"nasajon"}>
             <Card
               image={nasajon}
@@ -43,11 +70,12 @@ export default function Experiences(): ReactElement {
               link="https://nasajon.com.br/"
               summaryKeys={[
                 [ <SiPhp key="php nasajon" />, "PHP" ],
-                [ <SiSymfony key="symfony nasajon" />, "Symfony" ],
-                [ <SiCodeceptjs key="codeception nasajon" />, "Codeception" ],
+                [ <SiAngular key="angular nasajon" />, "Angular" ],
+                [ <Image src={phpunit} alt="phpunit icon" key="phpunit kevi"
+                  className="filter invert-0 brightness-0 dark:invert duration-300 ease-in" />, "PHPUnit" ],
+                [ <SiSwagger key="swagger nasajon" />, "Swagger" ],
                 [ <SiDocker key="docker nasajon" />, "Docker" ],
                 [ <SiPostgresql key="postgresql nasajon" />, "PostgreSQL" ],
-                [ <SiAngular key="angular nasajon" />, "Angular" ]
               ]}
             />
           </li>
@@ -65,9 +93,9 @@ export default function Experiences(): ReactElement {
               link="https://labs.soujunior.tech/"
               summaryKeys={[
                 [ <SiAngular key="angular soujunior" />, "Angular" ],
+                [ <SiNodedotjs key="nodejs soujunior" />, "Node.JS" ],
+                [ <SiCss3 key="css soujunior" />, "CSS3" ],
                 [ <SiTypescript key="typescript soujunior" />, "Typescript" ],
-                [ <SiJavascript key="javascript soujunior" />, "Javascript" ],
-                [ <SiCss3 key="css soujunior" />, "CSS" ]
               ]}
             />
           </li>
