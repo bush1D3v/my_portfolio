@@ -33,9 +33,16 @@ export default function Experiences(): ReactElement {
               title="Kevi"
               description="Desenvolvedor Full-Stack"
               data="2024 - Presente"
-              resume={<p>Desenvolvendo de ponto a ponta as integrações, automações e novas features na Kevi, impacto todos os seus clientes , principalmente, seus cases de maior sucesso.<br />
-                Desenvolvendo com foco em melhorias de fluxo de usuário e automações, assim como implementar novas integrações e disparadores aos clientes, desenvolvo testes e documentações, otimizo o processamento de resposta ao usuário com minhas experiências em PHP e Vue.js.<br />
-                Trabalhando de forma autônoma, também tenho constante contato com clientes, negociações, e importante calls para discutirmos escalabilidade do negócio, melhoria de performance e possíveis novas melhorias no produto.
+              resume={<p>Desenvolvendo de ponto a ponta as integrações, automações e novas features na Kevi,
+                impacto todos os seus clientes , principalmente, seus cases de maior sucesso.<br />
+                Desenvolvendo com foco em melhorias de fluxo de usuário e automações, assim como
+                implementar novas integrações e disparadores aos clientes, desenvolvo testes e documentações,
+                otimizo o processamento de resposta ao usuário com minhas experiências em PHP e Vue.js.
+                <br />
+                Trabalhando de forma autônoma, também tenho constante contato com clientes, negociações,
+                e importante calls
+                para discutirmos escalabilidade do negócio, melhoria de performance e possíveis novas
+                melhorias no produto.
               </p>}
               link="https://kevi.com.br/"
               summaryKeys={[
