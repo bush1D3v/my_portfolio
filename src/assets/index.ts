@@ -11,6 +11,9 @@ import cruzeiroDoSul from "./cruzeiro-do-sul.jpg";
 import descomplica from "./descomplica.jpg";
 import nasajon from "./nasajon.png";
 import souJunior from "./sou-junior.png";
+import kevi from "./kevi.jpeg";
+import phpunit from "./phpunit.png";
+import slimphp from "./slimphp.png";
 
 export {
   cubosAcademy,
@@ -25,5 +28,8 @@ export {
   cruzeiroDoSul,
   descomplica,
   nasajon,
-  souJunior
+  souJunior,
+  kevi,
+  phpunit,
+  slimphp
 };
