@@ -35,7 +35,7 @@ export default function Footer(): ReactElement {
             ariaLabel="Discord Link"
           />
           <LinkItem
-            href="https://www.instagram.com/victorj.021"
+            href="https://www.instagram.com/devnavarro/"
             icon={<FaInstagram />}
             ariaLabel="Instagram Link"
           />
@@ -45,7 +45,7 @@ export default function Footer(): ReactElement {
             ariaLabel="WhatsApp Link"
           />
           <LinkItem
-            href="https://twitter.com/victorj_021"
+            href="https://x.com/dev__navarro"
             icon={<FaTwitter />}
             ariaLabel="Twitter Link"
           />
